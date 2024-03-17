@@ -1,52 +1,84 @@
-* {
-    margin: 0;
-    padding: 0;
-    background:
-    linear-gradient(rgb(143, 243, 247), transparent),
-    linear-gradient(to top left, rgb(107, 240, 250), transparent),
-    linear-gradient(to top right, rgb(248, 98, 236), transparent);
-background-blend-mode:soft-light;
-    }
-.tabstyle {
-    width: 300px;
-    height: 430px;
-    margin: 20px auto;
-    border: 3px solid rgb(red, green, rgba(0, 0, 255, 0.925));
-    border-radius: 10px 10px 10px 10px;
-    padding: 20px;
+body {
+    font-family: sans-serif;
     text-align: center;
-    background-color:  #0081fada; 
-}
+    background-color: rgb(252, 183, 245);
     
-h1 {text-align: center;
-    padding: 23px;
-    background:
-        linear-gradient(rgb(250, 243, 143), transparent),
-        linear-gradient(to top left, rgb(190, 241, 94), transparent),
-        linear-gradient(to top right, rgb(247, 247, 250), transparent);
-    background-blend-mode: screen;
 }
-input:hover {
-    background-color: #0011ff; 
-    }
 
-.btn {
-    width: 55px;
-    height: 70px;
-    font-size: 25px;
-    margin: 2px;
-    cursor: pointer;
-    border-radius: 15px 15px 15px 15px;
-    background-color: rgb(0, 0, 0); 
-    color: white;    
+#inputs {
+    margin: 20px auto;
 }
-.textview {    
-    width: 223px;
-    margin: 5px;
-    font-size: 25px;
-    padding: 5px;
-    background-color: #D8BFD8; 
+
+label {
+    display: block;
+    margin-bottom: 5px;
 }
-center, table, td, tr{
-    background-color: rgb(153, 194, 247);
+
+input[type="number"] {
+    width: 200px;
+    padding: 10px;
+    border: 2px solid #080808;
+    margin-bottom: 10px;
+    background-color: rgb(255, 197, 249);
+    border-radius: 30px 30px 30px 30px;
 }
+
+#result {
+    font-weight: bold;
+    margin-top: 20px;
+    background-color: rgba(145, 3, 131, 0.753);
+    font-size:x-large;
+    border-radius: 80px 80px 80px 80px;
+    border-radius: auto;
+
+
+}
+h1 {
+    color: black;
+    font-family: 'Lucida Sans';
+    background-color:  rgb(255, 0, 234);
+    border-radius: 30px 30px;
+    width: fit-content, max-content;
+
+
+    
+
+}
+.contnt {
+    background-color: rgb(255, 109, 243);
+    height: 200px;
+    width: 300px;
+    font-family: cursive;
+    border-radius: 30px 30px;
+
+}
+.btns {
+  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  border: 0,black;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.btns:focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgb(25, 0, 255), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.btns-62:hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgb(25, 0, 255), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
