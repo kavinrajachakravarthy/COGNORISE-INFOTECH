@@ -1,52 +1,59 @@
-* {
-    margin: 0;
-    padding: 0;
-    background:
-    linear-gradient(rgb(143, 243, 247), transparent),
-    linear-gradient(to top left, rgb(107, 240, 250), transparent),
-    linear-gradient(to top right, rgb(248, 98, 236), transparent);
-background-blend-mode:soft-light;
-    }
-.tabstyle {
-    width: 300px;
-    height: 430px;
-    margin: 20px auto;
-    border: 3px solid rgb(red, green, rgba(0, 0, 255, 0.925));
-    border-radius: 10px 10px 10px 10px;
+body {
+    font-family: Arial, sans-serif;
+    background-image:url("pics/background\ img.jpeg");
+  }
+  .container {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #fff;
     padding: 20px;
-    text-align: center;
-    background-color:  #0081fada; 
-}
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h2
+  {
+    background-color: rgba(128, 120, 120, 0.74);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 25px;
+  }
+  input[type="number"] {
+    width: 95%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px 5px 5px 5px;
+    background-color: rgb(201, 255, 246);
+  }
+  select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px 8px 8px 8px;
+    background-color:  rgb(201, 255, 246);
     
-h1 {text-align: center;
-    padding: 23px;
-    background:
-        linear-gradient(rgb(250, 243, 143), transparent),
-        linear-gradient(to top left, rgb(190, 241, 94), transparent),
-        linear-gradient(to top right, rgb(247, 247, 250), transparent);
-    background-blend-mode: screen;
-}
-input:hover {
-    background-color: #0011ff; 
-    }
-
-.btn {
-    width: 55px;
-    height: 70px;
-    font-size: 25px;
-    margin: 2px;
+  }
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
     cursor: pointer;
-    border-radius: 15px 15px 15px 15px;
-    background-color: rgb(0, 0, 0); 
-    color: white;    
-}
-.textview {    
-    width: 223px;
-    margin: 5px;
-    font-size: 25px;
-    padding: 5px;
-    background-color: #D8BFD8; 
-}
-center, table, td, tr{
-    background-color: rgb(153, 194, 247);
-}
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  #result {
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-display: flex;
+  }
