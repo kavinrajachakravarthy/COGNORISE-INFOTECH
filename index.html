@@ -1,48 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Calculator</title>
-<link rel="stylesheet" href="styles.css">
-<script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+
 </head>
 <body>
-<h1> Kavin Calculator </h1>
-<div class="tabstyle">
-<form name="form1">
-<input class="textview" name="textview">
-</form>
-<center>
-<table>
-<tr>
-    <td> <input class="btn" type="button" value="C" onclick="form1.textview.value = '' " > </td>
-    <td> <input class="btn" type="button" value="B" onclick="backspace()" > </td>
-    <td> <input class="btn" type="button" value="/" onclick="insert('/')" > </td>
-    <td> <input class="btn" type="button" value="x" onclick="insert('*')" > </td>
-    </tr>
-    <tr>
-    <td> <input class="btn" type="button" value="7" onclick="insert(7)" > </td>
-    <td> <input class="btn" type="button" value="8" onclick="insert(8)" > </td>
-    <td> <input class="btn" type="button" value="9" onclick="insert(9)" > </td>
-    <td> <input class="btn" type="button" value="-" onclick="insert('-')" > </td>
-    </tr>
-    <tr>
-    <td> <input class="btn" type="button" value="4" onclick="insert(4)" > </td>
-    <td> <input class="btn" type="button" value="5" onclick="insert(5)" > </td>
-    <td> <input class="btn" type="button" value="6" onclick="insert(6)" > </td>
-    <td> <input class="btn" type="button" value="+" onclick="insert('+')" > </td>
-    </tr>
-    <tr>
-    <td> <input class="btn" type="button" value="1" onclick="insert(1)" > </td>
-    <td> <input class="btn" type="button" value="2" onclick="insert(2)" > </td>
-    <td> <input class="btn" type="button" value="3" onclick="insert(3)" > </td>
-    <td rowspan="5"> <input class="btn" style="height: 110px" type="button" value="=" onclick="equal()"> </td>
-    </tr>
-    <tr>
-    <td colspan="2"> <input class="btn" style="width: 106px" type="button" value="0" onclick="insert(0)" > </td>
-    <td> <input class="btn" type="button" value="." onclick="insert('.')"> </td>
-    </tr>
-</table>
-</center>
-</div>
+  <div class="container">
+    <center><h2>Currency Converter</h2></center>
+    
+    <div>
+      <input type="number" id="amount" placeholder="Enter amount">
+    </div>
+    <div>
+      <select id="from">
+        <option value="INR">Indian Rupee (INR)</option>
+        <option value="USD">United States Dollar (USD)</option>
+        <option value="EUR">Euro (EUR)</option>
+        <option value="GBP">British Pound Sterling (GBP)</option>
+        <option value="AUD">Australian Dollar (AUD)</option>
+        <option value="CAD">Canadian Dollar (CAD)</option>
+        <option value="JPY">Japanese Yen (JPY)</option>
+        <option value="CHF">Swiss Franc (CHF)</option>
+        <option value="CNY">Chinese Yuan Renminbi (CNY)</option>
+        <option value="HKD">Hong Kong Dollar (HKD)</option>
+        <option value="NZD">New Zealand Dollar (NZD)</option>
+        <option value="SGD">Singapore Dollar (SGD)</option>       
+        <option value="MXN">Mexican Peso (MXN)</option>
+        <option value="BRL">Brazilian Real (BRL)</option>
+        <option value="RUB">Russian Ruble (RUB)</option>
+        <option value="ZAR">South African Rand (ZAR)</option>
+        <option value="SEK">Swedish Krona (SEK)</option>
+        <option value="NOK">Norwegian Krone (NOK)</option>
+        <option value="KRW">South Korean Won (KRW)</option>
+        <option value="TRY">Turkish Lira (TRY)</option>
+      </select>
+    </div>
+    <div>
+      <select id="to">
+        <option value="INR">Indian Rupee (INR)</option>
+        <option value="USD">United States Dollar (USD)</option>
+        <option value="EUR">Euro (EUR)</option>
+        <option value="GBP">British Pound Sterling (GBP)</option>
+        <option value="AUD">Australian Dollar (AUD)</option>
+        <option value="CAD">Canadian Dollar (CAD)</option>
+        <option value="JPY">Japanese Yen (JPY)</option>
+        <option value="CHF">Swiss Franc (CHF)</option>
+        <option value="CNY">Chinese Yuan Renminbi (CNY)</option>
+        <option value="HKD">Hong Kong Dollar (HKD)</option>
+        <option value="NZD">New Zealand Dollar (NZD)</option>
+        <option value="SGD">Singapore Dollar (SGD)</option>        
+        <option value="MXN">Mexican Peso (MXN)</option>
+        <option value="BRL">Brazilian Real (BRL)</option>
+        <option value="RUB">Russian Ruble (RUB)</option>
+        <option value="ZAR">South African Rand (ZAR)</option>
+        <option value="SEK">Swedish Krona (SEK)</option>
+        <option value="NOK">Norwegian Krone (NOK)</option>
+        <option value="KRW">South Korean Won (KRW)</option>
+        <option value="TRY">Turkish Lira (TRY)</option>
+      </select>
+    </div>
+    <button onclick="convertCurrency()">Convert</button>
+    <div id="result"></div>
+  </div>
 </body>
 </html>

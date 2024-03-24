@@ -1,14 +1,14 @@
-function insert(num) {
-    document.form1.textview.value = document.form1.textview.value + num;
-    }    
-    function equal() {
-    var exp = document.form1.textview.value;
-    if(exp) {
-    document.form1.textview.value = eval(exp);
-    }
-    }
-    function backspace() {
-    var exp = document.form1.textview.value;
-    document.form1.textview.value = exp.substring(0, exp.length - 1);
-}
-    
+function convertCurrency() {
+    const amount = document.getElementById('amount').value;
+    const fromCurrency = document.getElementById('from').value;
+    const toCurrency = document.getElementById('to').value;
+
+    fetch(`https://open.er-api.com/v6/latest/${fromCurrency}`)
+      .then(response => response.json())
+      .then(data => {
+        const exchangeRate = data.rates[toCurrency];
+        const convertedAmount = amount * exchangeRate;
+        document.getElementById('result').innerText = `${amount} ${fromCurrency} = ${convertedAmount.toFixed(2)} ${toCurrency}`;
+      })
+      .catch(error => console.error('Error:', error));
+  }
